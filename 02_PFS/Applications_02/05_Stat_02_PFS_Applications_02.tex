@@ -32,14 +32,14 @@
 \def\discipline{Sciences Industrielles de l'Ingénieur}
 \def\xxtitre{%
 \ifxp
-CI ** : 
+6 - Étude statique des systèmes de solides de la chaîne d'énergie -- Analyser, Modéliser, Résoudre
 \else
 \fi
 }
 
 \def\xxsoustitre{%
 \ifxp
-Chapitre ** -- 
+Chapitre 2 -- Principe Fondamental de la Statique 
 \else
 \fi}
 
@@ -51,8 +51,8 @@ Xavier \textsc{Pessoles}
 
 \def\xxpied{%
 \ifxp
-CI ** : **\\
-Ch. ** : ** -- Cours TD
+6 : Statique : Analyser, Modéliser, Résoudre\\
+Ch. 2 : PFS -- Applications 02
 \else
 \fi}
 
@@ -69,26 +69,165 @@ Ch. ** : ** -- Cours TD
 \fi
 
 
-\begin{warn}
-Je compile avec pdfLaTeX.
-\end{warn}
-\setlength{\parskip}{0ex plus 0.2ex minus 0ex}
- \renewcommand{\contentsname}{}
- \renewcommand{\baselinestretch}{1}
 
-\tableofcontents
+\begin{flushright}
+D'après ressources de Jean-Pierre Pupier.
+\end{flushright}
 
- \renewcommand{\baselinestretch}{1.2}
-\setlength{\parskip}{2ex plus 0.5ex minus 0.2ex}
+\section*{Exercice 0 : Calculs d'efforts}
 
 
+\begin{minipage}[c]{.68\linewidth}
+\subparagraph{} \textit{Déterminer $Fx$ et $Fy$ les projections de $\vect{F}$ sur l'axe des abscisses et des ordonnées.}
 
-\section{Titre 1}
+\subparagraph{} \textit{Calculer $\vect{\mathcal{M}\left(O,\vect{F} \right)}$}.
+\end{minipage} \hfill
+\begin{minipage}[c]{.3\linewidth}
+\begin{center}
+\includegraphics[width=.95\textwidth]{images/fig0}
+\end{center}
+\end{minipage}
 
-\subsection{Sous titre 1}
-\begin{thebibliography}{2}
-\bibitem{xx}{xx}
-\end{thebibliography}
+
+
+\setcounter{subparagraph}{0}
+
+\section*{Exercice 1 : Chargeur}
+
+\begin{minipage}[c]{.58\linewidth}
+Le chargeur proposé se compose d’un châssis 1 sur pneus, d’un godet 2 et d’une flèche de levage 3. 
+
+$\vect{P_1}$, $\vect{P_2}$ et $\vect{P_3}$ schématisent le poids respectifs du châssis, du godet et de sa charge et de la flèche. On a $||\vect{P_1}|| = 10\, 000\; \text{daN}$, $||\vect{P_2}|| = 5\, 000\; \text{daN}$ et $||\vect{P_3}|| = 2\, 500\; \text{daN}$. 
+
+On considère une étude plane.
+
+\subparagraph{} \textit{Déterminer les actions du sol et du chargeur en $A$ et en $B$.}
+
+\subparagraph{} \textit{Quelle est la valeur limite de $||\vect{P_2}||$ avant basculement ?}
+
+\end{minipage} \hfill
+\begin{minipage}[c]{.4\linewidth}
+\begin{center}
+\includegraphics[width=.95\textwidth]{images/fig1}
+\end{center}
+\end{minipage}
+
+\setcounter{subparagraph}{0}
+
+\section*{Exercice 2 : Cisaille d'atelier}
+
+
+\begin{minipage}[c]{.58\linewidth}
+
+La figure ci-dessus représente une cisaille d’atelier permettant la découpe de pièces de fortes sections. 
+
+L’opérateur agit sur la cisaille en F et exerce une action mécanique verticale $\left\{\mathcal{F}\right\}$ . L’action mécanique, appliquée verticalement en C, nécessaire pour cisailler la pièce, est de $600\;\text{daN}$.
+
+On considère que les liaisons sont sans frottements et que le poids des pièces est négligeable devant les autres actions mécaniques. On considère une étude plane.
+
+
+\subparagraph{} \textit{Réfléchir à une méthode de résolution.}
+
+\subparagraph{} \textit{Déterminer analytiquement l'effort minimal exercé par l'opérateur.}
+
+\end{minipage} \hfill
+\begin{minipage}[c]{.4\linewidth}
+\begin{center}
+\includegraphics[width=.95\textwidth]{images/fig2}
+\end{center}
+\end{minipage}
+
+\newpage
+
+\setcounter{subparagraph}{0}
+\section*{Exercice 3 : Platine de lecture}
+\subsection*{Description}
+
+
+Le bras 1 comprend une cellule munie d'une pointe de lecture en diamant dont l'extrémité sphérique a pour centre le point M et un contrepoids permettant de contrebalancer le poids du bras pour obtenir une faible force d'appui sur le disque. La cellule est montée sur le bras. Elle est orientée tangentiellement au sillon du disque dans lequel la pointe de lecture est posée.
+
+\begin{minipage}[c]{.48\linewidth}
+\begin{center}
+\includegraphics[width=.95\textwidth]{images/fig3}
+\end{center}
+\end{minipage} \hfill
+\begin{minipage}[c]{.48\linewidth}
+\begin{center}
+\includegraphics[width=.95\textwidth]{images/fig4}
+\end{center}
+\end{minipage}
+
+
+\subsection*{Fonctionnement}
+
+
+\begin{minipage}[c]{.58\linewidth}
+Les deux flancs du sillon du disque comportent des stries et des bosses qui mettent en mouvement la pointe de lecture par rapport à la cellule sur laquelle elle est montée souple. Ces vibrations sont converties en signaux électriques qui sont amplifiés pour obtenir un son.
+
+La gravure de chaque flanc du sillon crée le signal d'un canal (gauche ou droite). L'effet stéréophonique est obtenu par lecture simultanée des deux flancs.
+
+\end{minipage} \hfill
+\begin{minipage}[c]{.4\linewidth}
+\begin{center}
+\includegraphics[width=.95\textwidth]{images/fig5}
+\end{center}
+\end{minipage}
+
+
+Pour que la cellule fonctionne dans de bonnes conditions, il faut que les forces moyennes exercées par le disque au niveau des points B et C aient mêmes normes.
+
+La géométrie du système impose, pour arriver à ce but, un système nommé "anti skating" qui exerce un couple de moment  $\vect{C_3}$ d'axe $\vect{z}$ sur la pièce 3. Ce système n'est pas représenté.  
+
+\begin{obj}
+Le but du problème est de déterminer $\vect{C_3}$..
+\end{obj}
+
+
+Notations et données supplémentaires : 
+\begin{itemize}
+\item $R$ : rayon de la pointe de lecture.
+\item Les points A et M sont dans un plan horizontal xy.
+\item Distance $AM = a$
+\item Angle $\left(\vect{x};\vect{AM} \right)= \alpha$.
+\item $B$ : norme de la force en $B$.
+\item $C$ : norme de la force en $C$.
+\item Le poids du bras 1 et de la pièce 3 est noté  . Il est colinéaire à l'axe z et est dirigé vers les z négatifs. Son point d'application est noté K. La position de K n'est pas précisée ni la valeur du poids.
+\item $f$ : facteur de frottement entre le disque et la pointe de lecture.
+\end{itemize}
+
+\subsection*{Questions}
+
+\subparagraph{} \textit{Faire un ou plusieurs dessins montrant pour le point de contact en $B$ la normale $\vect{n}$, le cône de frottement, la vitesse de glissement et le glisseur $\left\{ \mathcal{F}_{B,2\rightarrow 1}\right\}$.}
+
+\subparagraph{} \textit{Établir l'expression des torseurs d'actions mécaniques
+ $\left\{ \mathcal{F}_{B,2\rightarrow 1}\right\}$ et
+ $\left\{ \mathcal{F}_{C,2\rightarrow 1}\right\}$ .}
+
+\begin{rem}
+Coup de pouce : 
+La résultante de $\left\{ \mathcal{F}_{B,2\rightarrow 1}\right\}$ sera de la forme $\vect{B} = B\sin \varphi \cdot \vect{x} +  B\dfrac{\sqrt{2}}{2} \cos \varphi  \cdot \vect{y} +  B\dfrac{\sqrt{2}}{2} \cos \varphi  \cdot \vect{z}$.
+\end{rem}
+
+
+\subparagraph{} \textit{Déterminer, au point $M$, le torseur représentant les actions de contact du disque sur le diamant.}
+
+\subparagraph{} \textit{Isoler (1 + 3). Faire le bilan des actions mécaniques extérieures.}
+
+
+\subparagraph{} \textit{Écrire une seule équation issue du principe fondamental de la statique permettant de trouver le moment du couple $\vect{C_3}$  exercé par l'anti skating. N'exprimer que ce qui est utile pour répondre à la question.}
+
+Applications numériques : 
+\begin{itemize}
+\item $R = 15\cdot 10^{-3} \; \text{mm}$;
+\item $a = 230 \; \text{mm}$;
+\item la composante verticale (direction $\vect{z}$) de $\vect{B_{2\rightarrow 1}}$ (égale à la composante verticale de $\vect{C_{2\rightarrow 1}}$ vaut $0,01 \; \text{N}$;
+\item $f=0,2$;
+\item $\alpha = 22^{\text{o}}$.
+\end{itemize}
+
+\subparagraph{}
+\textit{Calculer  $\vect{C_3}$.}
+
 \end{document}
 
 
