@@ -53,11 +53,11 @@ Xavier \textsc{Pessoles}}{}}
 \end{center}
 
 \vspace{.25cm}
-
-\subsection*{Question de cours}
-\subparagraph*{}
-\textit{Après avoir donné leur schéma cinématique paramétré, donner les torseurs des actions mécaniques des liaisons suivantes : pivot d'axe $(A,\vect{y})$, appui plan de normale $\vect{x}$, glissière de direction $\vect{x}$.} 
-
+%
+%\subsection*{Question de cours}
+%\subparagraph*{}
+%\textit{Après avoir donné leur schéma cinématique paramétré, donner les torseurs des actions mécaniques des liaisons suivantes : pivot d'axe $(A,\vect{y})$, appui plan de normale $\vect{x}$, glissière de direction $\vect{x}$.} 
+%
 
 \subsection*{Choix de coussinets -- Engrenage à denture droite}
 
@@ -69,7 +69,7 @@ Xavier \textsc{Pessoles}}{}}
 \end{obj}
 
 
-Le schéma d'architecture du montage ci-dessous présente un pignon arbré entraîné par \textbf{un moteur} (non représenté). La fréquence de rotation de l'arbre est de 180 tr/min.
+Le schéma d'architecture du montage ci-dessous présente un pignon arbré entraîné par \textbf{un moteur} (non représenté) de couple $C_m$.. La fréquence de rotation de l'arbre est de 180 tr/min.
 L'effort à transmettre par l'engrenage est de 2400N. L'angle de pression dans l'engrenage est de 20\textdegree. On a $\vect{AB} = 3a \vect{z}$ et $\vect{AC} = a\vect{z}  + R \vect{y}$.
 
 \begin{center}
@@ -91,7 +91,10 @@ L'effort à transmettre par l'engrenage est de 2400N. L'angle de pression dans l
 \subsubsection*{Détermination des actions mécaniques}
 
 \subparagraph{}
-\textit{Isoler l'arbre et faire le bilan des actions mécaniques.}
+\textit{Déterminer les actions mécaniques dans les liaisons A et B.}
+
+%\subparagraph{}
+%\textit{Isoler l'arbre et faire le bilan des actions mécaniques.}
 \ifthenelse{\boolean{prof}}{
 \begin{corrige}
 Action mécanique exercée par la liaison rotule au point $A$ :
@@ -137,8 +140,8 @@ On a :
 
 \end{corrige}
 }{}
-\subparagraph{}
-\textit{Appliquer le PFS.}
+%\subparagraph{}
+%\textit{Appliquer le PFS.}
 \ifthenelse{\boolean{prof}}{
 \begin{corrige}
 On applique le PFS au solide 1 et on a :
@@ -150,8 +153,8 @@ $$
 \end{corrige}
 }{}
 
-\subparagraph{}
-\textit{Faire le bilan des inconnues et des équations. Déterminer les actions mécaniques dans les liaisons ainsi que le couple moteur nécessaire.}
+%\subparagraph{}
+%\textit{Faire le bilan des inconnues et des équations. Déterminer les actions mécaniques dans les liaisons ainsi que le couple moteur nécessaire.}
 \ifthenelse{\boolean{prof}}{
 \begin{corrige}
 
@@ -207,6 +210,7 @@ $$
 \subparagraph{}
 \textit{Aurait-il été possible de trouver les actions mécaniques plus rapidement ?}
 
+\newpage
 
 \subsubsection*{Choix des coussinets}
 Un calcul en torsion de l'arbre impose un diamètre supérieur à 30 mm. 
@@ -253,7 +257,7 @@ Sauf erreur, les coussinets choisis ne conviendront pas.
 \end{corrige}
 }
 
-\newpage
+%\newpage
 
 \subsection*{Choix de coussinets -- Engrenage à denture hélioïdale}
 \setcounter{subparagraph}{0}
